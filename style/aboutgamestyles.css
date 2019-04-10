@@ -1,0 +1,145 @@
+@import url(fonts/clear-sans.css);
+body {
+	margin: 0;
+	padding: 0;
+	background: #323232;
+	color: #cfcfcf;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	}
+
+.all {
+	margin: 25px auto 0 auto;
+	max-width: 700px;
+	}
+
+h1 {
+	font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    color: white;
+}
+
+p {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+span {
+	font-weight: bold;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	text-shadow: 0 0 1px #cfcfcf;
+}
+
+.opa {
+	font-size: 25px;
+}
+
+.logo {
+	position: relative;
+	margin: 0 auto;
+	height: 200px;
+	max-width: 200px;
+	background: url(../img/shadev-logo.png) no-repeat;
+	background-size: contain;
+}
+
+.logo::before {
+	position: absolute;
+	content: "";
+	width: 250px;
+	height: 2px;
+	background-color: #cfcfcf;
+	top: 100px;
+	right: 200px;
+}
+
+.logo::after {
+	position: absolute;
+	content: "";
+	width: 250px;
+	height: 2px;
+	background-color: #cfcfcf;
+	top: 100px;
+	left: 200px;
+}
+
+.we {
+	display: flex;
+	justify-content: space-between;
+}
+
+.opa2 {
+	font-size: 23px;
+}
+
+.we p{
+	text-align: center;
+	font-size: 14px;
+}
+
+.c {
+	margin: 25px 0 0 0;
+	max-width: 3840px;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #131111;
+}
+
+@media (max-width: 520px) {
+	.all{
+		margin: 15px auto 0 auto;
+		max-width: 500px;
+		padding: 0 10px;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 23px;
+	}
+
+	p {
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	.we{
+		flex-wrap: wrap;
+	}
+
+	.we p{
+		font-size: 13px;
+	}
+
+	.opa {
+		font-size: 18px;
+	}
+
+	.logo {
+		height: 100px;
+		width: 100px;
+		margin: 0 auto;
+	}
+	.logo::before {
+		top: 50px;
+		right: 100px;
+	}
+
+	.logo::after {
+		top: 50px;
+		left: 100px;
+	}
+
+	.opa2{
+		font-size: 16px;
+	}
+}
